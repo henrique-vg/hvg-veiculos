@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho {
+    background-color: black;
+    padding: 20px 90px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cabecalho__logo {
+    width: 200px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none; 
+}
+
+.cabecalho__link a {
+    text-decoration: none;
+    color: #b8860b;
+    font-size: 1.25em;
+}
+
+.cabecalho__link a:hover {
+    color: #FFFFFF;
+}
+
+.principal {
+    padding: 30px;
+    background-color: #F8F8FF;
+}
+
+.principal__titulo {
+    margin-bottom: 25px;
+}
+
+.principal__conteudo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.cartao__ofertas {
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 0 5px #000000;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+}
+
+.cartao__imagem--ofertas {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.cartao__preco {
+    margin-bottom: 10px;
+}
+
+.cartao__botao {
+    padding: 10px;
+    background-color: #D7BE69;;
+	border-radius: 5px;
+	color: #000000;
+	display: block;
+	text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+	transition: 0.8s background;
+}
+
+.cartao__botao:hover {
+    background-color: #b8860b;
+}
+
+.cartao__demais {
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #000000;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.cartao__demais:hover {
+    transform: scale(1.1);
+}
+
+.cartao__demais a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 10px;
+}
+
+.cartao__imagem--demais {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.rodape {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape__logo {
+    width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+	.cabecalho {
+		padding: 20px 30px;
+	}
+
+    .cartao__demais {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+	.cabecalho {
+		display: block;
+        text-align: center;
+        font-size: 13px;
+        padding: 20px;
+	}
+
+    .cabecalho__logo {
+        width: 170px;
+        margin-bottom: 25px;
+    }
+
+    .principal__conteudo {
+        margin-bottom: 30px;
+    }
+
+    .principal__titulo {
+        text-align: center;
+        font-size: 22px;
+    }
+}
